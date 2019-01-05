@@ -7,6 +7,7 @@ const gulp = require("gulp");
 const plumber = require("gulp-plumber")
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
+const uglify = require("gulp-uglify");
 const pkg = require('./package.json');
 
 // Copy third party libraries from /node_modules into /vendor
@@ -62,10 +63,10 @@ function css() {
         outputStyle: "expanded"
       }))
       .on("error", sass.logError)
-    //   .pipe(autoprefixer({
-    //     browsers: ['last 2 versions'],
-    //     cascade: false
-    //   }))
+      .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+      }))
     //   .pipe(header(banner, {
     //     pkg: pkg
     //   }))
@@ -77,10 +78,23 @@ function css() {
       .pipe(gulp.dest("./dist/assets/css"))
       .pipe(browsersync.stream());
   }
+
+  function js() {
+    return gulp
+      .src(["./src/assets/js/*.js"])
+      .pipe(gulp.dest('./dist/assets/js'))
+      .pipe(uglify())
+      .pipe(rename({
+        suffix: '.min'
+      }))
+      .pipe(gulp.dest('./dist/assets/js'))
+      .pipe(browsersync.stream());
+  }
   
 
 // Tasks
 gulp.task("css", css);
+gulp.task("js", js);
 
 // BrowserSync
 function browserSync(done) {
@@ -101,11 +115,11 @@ function browserSyncReload(done) {
 // Watch files
 function watchFiles() {
   gulp.watch("./src/scss/**/*", css);
-//   gulp.watch(["./js/**/*.js", "!./js/*.min.js"], js);
+  gulp.watch("./src/js/*.js", js);
   gulp.watch("./dist/**/*.php", browserSyncReload);
 }
 
-gulp.task("default", gulp.parallel('vendor', css));
+gulp.task("default", gulp.parallel('vendor', css, js));
 
 // dev task
 gulp.task("dev", gulp.parallel(watchFiles, browserSync));

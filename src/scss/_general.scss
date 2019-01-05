@@ -1,63 +1,71 @@
+// GENERAL STYLE
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    position: relative;
-    min-height: 100%;
-  }
-  
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 4rem;
-    background-color: #fff;
-    color: $primary;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 4rem;
-    background-color: $light-gray;
-    padding: 0.75rem 1rem;
-    font-size: 0.75rem;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
-  .my-btn-1, .my-btn-2 {
-    text-transform: uppercase;
-    font-weight: 700;
-    color: $primary;
-  }
-  
-  .my-btn-1:active,
-  .my-btn-1:focus,
-  .my-btn-1:visited,
-  .my-btn-2:active,
-  .my-btn-2:focus,
-  .my-btn-2:visited {
-    text-decoration: none;
-  }
-  
-  .my-btn-1 {
-    text-decoration: none;
-    display: block;
-    border: 2px solid $primary;
-    text-align: center;
-    padding: 0.3rem;
-    margin: 0 0.9em;
-  }
-  
-  .my-btn-2 {
-    color: $primary;
-    font-size: 0.9em;
-    border-bottom: 1px solid $primary;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 4rem;
+  background-color: #fff;
+  color: $primary;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 4rem;
+  background-color: $light-gray;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+%btn-general {
+  text-decoration: none;
+}
+
+.my-btn-1,
+.my-btn-2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $primary;
+}
+
+.my-btn-1:active,
+.my-btn-1:focus,
+.my-btn-1:visited,
+.my-btn-2:active,
+.my-btn-2:focus,
+.my-btn-2:visited {
+  @extend %btn-general;
+}
+
+.my-btn-1 {
+  @extend %btn-general;
+  display: block;
+  border: 2px solid $primary;
+  text-align: center;
+  padding: 0.3rem;
+  margin: 0 0.9em;
+}
+
+.my-btn-2 {
+  color: $primary;
+  font-size: 0.9em;
+  border-bottom: 1px solid $primary;
+}

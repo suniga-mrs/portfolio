@@ -22,9 +22,7 @@
 
 	<header>
 		<div id="logo-title">
-			<a href="#">
-				<h1>Michelle Suniga</h1>
-			</a>
+			<h1><a href="#">Michelle Suniga</a></h1>
 			<p>Full Stack Web Developer</p>
 		</div>
 
@@ -42,7 +40,7 @@
 	<main>
 		<section id="masthead">
 			<div id="landing-page-title">
-				<h2 > Hello! Let's make an <span>Impact</span></h2>
+				<h2> Hello! Let's make an <span>Impact</span></h2>
 			</div>
 			<div class="container-fluid">
 				<div>
@@ -77,57 +75,58 @@
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div id="skillset" class="row d-none d-md-block"> <!-- REPLACE D-NONE with class to show-->
-							<div class="col-md-12">
-								<div class="row"> 
-									
-									<div class="col-md-12">
-										<h4>Skillset</h4>
-										<div class="row">
+					<div id="skillset" class="row no-gutters d-md-block">
+						<!-- REPLACE D-NONE with class to show-->
+						<div class="col-md-12">
+							<div class="row no-gutters skillset-content">
+								<div class="col-md-12">
+									<h4>Skillset</h4>
+									<div class="row no-gutters skillset-list">
 
-											<div class="col-md-3">
-												<ul>
-													<li>HTML5</li>
-													<li>CSS3</li>
-													<li>Bootstrap 4</li>
-													<li>PHP</li>
-													<li>Laravel 5</li>
-												</ul>
+										<div class="col-md-3">
+											<ul>
+												<li>HTML5</li>
+												<li>CSS3</li>
+												<li>Bootstrap 4</li>
+												<li>PHP</li>
+												<li>Laravel 5</li>
+											</ul>
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>Web Design</li>
+												<li>Graphic Design</li>
+												<li>Illustration</li>
+												<li>Branding</li>
+												<li>Art Direction</li>
+											</ul>
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>Photography</li>
+												<li>Illustration</li>
+												<li>Video Production</li>
+												<li>Video Editing</li>
+											</ul>
+										</div>
+
+									</div>
+									<div class="row no-gutters d-md-none">
+										<div class="col-md-12">
+											<div class="back-link">
+												<a href="#" class="my-btn-2">Back</a>
 											</div>
-
-											<div class="col-md-3">
-												<ul>
-													<li>Web Design</li>
-													<li>Graphic Design</li>
-													<li>Illustration</li>
-													<li>Branding</li>
-													<li>Art Direction</li>
-												</ul>
-											</div>
-
-											<div class="col-md-3">
-												<ul>
-													<li>Photography</li>
-													<li>Illustration</li>
-													<li>Video Production</li>
-													<li>Video Editing</li>
-												</ul>
-											</div>
-
 										</div>
 									</div>
 								</div>
-
-								<div class="row  d-md-none">
-									<div class="col-md-12">
-										<div class="link-left">
-											<a href="#">Back</a>
-										</div>
-									</div>
-								</div>
-
 							</div>
+
+
+
 						</div>
 					</div>
 
@@ -135,7 +134,7 @@
 			</div>
 		</section>
 	</main>
-	
+
 	<footer class="d-flex justify-content-between ">
 		<div class="align-self-center">
 			<p>Michelle Suniga &copy; 2019</p>
@@ -153,7 +152,7 @@
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- Custom JS -->
-	<!-- <script src="assets/js/script.js"></script> -->
+	<script src="assets/js/main.js"></script>
 
 </body>
 

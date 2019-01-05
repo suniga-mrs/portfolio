@@ -1,26 +1,33 @@
+// HOME PAGE STYLE
 
 #masthead {
-    padding: 2em 0;
-  }
-  
-  #masthead h2 {
+  padding: 2em 0;
+
+  h2 {
     font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 2.25em;
     letter-spacing: 2px;
     padding: 0 1em;
+
+    span {
+      font-size: 3.75em;
+      transition: all 0.3s ease;
+    }
+
+    span:hover {
+      color: red;
+    }
+
   }
-  
-  #masthead h2 span {
-    font-size: 3.75em;
-  }
-  
-  #masthead #landing-page-title {
+
+
+  #landing-page-title {
     margin-bottom: 1.5rem;
   }
-  
-  #masthead #landing-page-title::after {
+
+  #landing-page-title::after {
     content: "";
     display: block;
     height: 1rem;
@@ -28,16 +35,69 @@
     margin-top: -3.5em;
     height: 4em;
   }
-  
-  #home-content {
-    padding: 0 1em;
-  }
-  
-  #home-content h3 span {
+
+}
+
+#home-content {
+
+  padding: 0 1em;
+
+
+  h3 span {
     border-bottom: 1px solid $secondary;
   }
-  
-  #home-content p {
+
+  p {
     padding-right: 1em;
   }
+
+}
+
+
+#skillset {
+  visibility: hidden;
+  background-color: $white;
+  position: absolute;
+  min-width: 100%;
+  top: 10vh;
+  left: 0;
+  z-index: 50;
+
+  min-height: 90vh;
+
+  .skillset-content {
+    padding: 2rem 2rem 1rem;
+  }
+
+  .skillset-list {
+    border-left: 10px solid $secondary;
+
+
+    ul {
+      list-style: none;
+      margin-bottom: 0;
+
+      li {
+        padding-left: 1.2rem;
+      }
+
+    }
+
+  }
+
+  .skillset-list div:nth-child(2) {
+    padding: 1rem 0;
+  }
+
+  .back-link {
+    margin-top: 2rem;
+  }
+
   
+
+}
+
+
+show-box {
+  visibility: visible;
+}
