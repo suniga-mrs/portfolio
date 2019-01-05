@@ -1,0 +1,43 @@
+
+#masthead {
+    padding: 2em 0;
+  }
+  
+  #masthead h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.25em;
+    letter-spacing: 2px;
+    padding: 0 1em;
+  }
+  
+  #masthead h2 span {
+    font-size: 3.75em;
+  }
+  
+  #masthead #landing-page-title {
+    margin-bottom: 1.5rem;
+  }
+  
+  #masthead #landing-page-title::after {
+    content: "";
+    display: block;
+    height: 1rem;
+    background-color: $secondary;
+    margin-top: -3.5em;
+    height: 4em;
+  }
+  
+  #home-content {
+    padding: 0 1em;
+  }
+  
+  #home-content h3 span {
+    border-bottom: 1px solid $secondary;
+  }
+  
+  #home-content p {
+    padding-right: 1em;
+  }
+  

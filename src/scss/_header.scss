@@ -1,0 +1,23 @@
+header #logo-title h1 {
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+header #logo-title p {
+    color: $mid-gray;
+    font-size: 0.95em;
+    margin: 0;
+}
+
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header #my-nav {
+    position: relative;
+}
