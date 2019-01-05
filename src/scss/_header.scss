@@ -1,23 +1,33 @@
-header #logo-title h1 {
-    color: $primary;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.3em;
-    margin: 0;
-}
+header {
+    background-color: #fafafd;
 
-header #logo-title p {
-    color: $mid-gray;
-    font-size: 0.95em;
-    margin: 0;
-}
+    #logo-title {
 
-header nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+        padding: 0.5rem 0.7rem;
 
-header #my-nav {
-    position: relative;
+        h1 {
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        p {
+            color: #a5a5a5;
+            font-size: 0.95em;
+            margin: 0;
+        }
+
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #my-nav {
+        position: relative;
+    }
 }

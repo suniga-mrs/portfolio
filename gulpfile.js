@@ -86,7 +86,7 @@ gulp.task("css", css);
 function browserSync(done) {
   browsersync.init({
     proxy: {
-        target: "test.dev"
+        target: "localhost/mydev/portfolio/dist/"
     }
   });
   done();
