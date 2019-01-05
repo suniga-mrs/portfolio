@@ -81,7 +81,7 @@ function css() {
 
   function js() {
     return gulp
-      .src(["./src/assets/js/*.js"])
+      .src(["./src/js/*.js"])
       .pipe(gulp.dest('./dist/assets/js'))
       .pipe(uglify())
       .pipe(rename({

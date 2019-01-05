@@ -70,8 +70,8 @@
 
 						<div class="row d-md-none">
 							<div class="col-md-12">
-								<div class="link-left">
-									<a href="#" class="my-btn-2">View Skills</a>
+								<div>
+									<a href="#" id="view-link" class="my-btn-2">View Skills</a>
 								</div>
 							</div>
 						</div>
@@ -117,16 +117,13 @@
 									</div>
 									<div class="row no-gutters d-md-none">
 										<div class="col-md-12">
-											<div class="back-link">
-												<a href="#" class="my-btn-2">Back</a>
+											<div>
+												<a href="#"  id="back-link" class="my-btn-2">Back</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-
-
 						</div>
 					</div>
 

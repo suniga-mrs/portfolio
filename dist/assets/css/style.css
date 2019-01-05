@@ -181,7 +181,6 @@ header #my-nav {
 }
 
 #skillset {
-  visibility: hidden;
   background-color: #fff;
   position: absolute;
   min-width: 100%;
@@ -216,6 +215,16 @@ header #my-nav {
   margin-top: 2rem;
 }
 
-show-box {
+.show-box {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   visibility: visible;
+}
+
+.hide-box {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  visibility: hidden;
 }
