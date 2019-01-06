@@ -32,6 +32,7 @@ footer {
   background-color: #fafafd;
   padding: 0.75rem 1rem;
   font-size: 0.75rem;
+  z-index: 100;
 }
 
 footer p {
@@ -163,7 +164,6 @@ header #my-nav {
 #masthead #landing-page-title::after {
   content: "";
   display: block;
-  height: 1rem;
   background-color: #fadf50;
   margin-top: -3.5em;
   height: 4em;
@@ -231,4 +231,70 @@ header #my-nav {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .my-btn-1 {
+    display: inline-block;
+    float: right;
+    border: none;
+    font-size: 0.75em;
+    padding: 0.1rem 0;
+    margin: 1em 5em 1em 0;
+    border-bottom: 1px solid #000;
+  }
+  header {
+    padding: 0.3rem;
+  }
+  header #logo-title h1, header #logo-title p {
+    display: inline;
+    font-size: 0.9rem;
+  }
+  header #logo-title p {
+    padding-left: 3px;
+  }
+  #masthead h2 {
+    font-size: 1.3rem;
+    padding: 0 3em;
+  }
+  #masthead h2 span {
+    display: block;
+  }
+  #masthead #landing-page-title::after {
+    margin-top: -2.2em;
+    height: 3.9em;
+  }
+  #home-content p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  #skillset {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+    position: relative;
+    min-height: 100%;
+    top: 0;
+  }
+  #skillset .skillset-content {
+    padding: 0;
+  }
+  #skillset h4 {
+    font-size: 0.75rem;
+    padding: 0.4em 0;
+  }
+  #skillset .skillset-list {
+    border-left: none;
+  }
+  #skillset .skillset-list ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  #skillset .skillset-list ul li {
+    padding-left: 0;
+    font-size: 0.75rem;
+  }
+  #skillset .skillset-list div:nth-child(2) {
+    padding: 0;
+  }
 }

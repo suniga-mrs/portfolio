@@ -1,0 +1,118 @@
+ // Small devices (landscape phones, 576px and up)
+ @media (max-width: 576px) and (min-width: 576px) {}
+
+ // Medium devices (tablets, 768px and up)
+ @media (min-width: 768px) {
+    // GENERAL 
+
+    .my-btn-1 {
+        display: inline-block;
+        float: right;
+        border: none;
+        font-size: 0.75em;
+        padding: 0.1rem 0;
+        margin: 1em 5em 1em 0;
+        border-bottom: 1px solid $primary;
+        
+      }
+
+    // HEADER AND NAVIGATION 
+    header {
+        padding: 0.3rem;
+        #logo-title {
+
+            %logostyle {
+                display: inline;
+                font-size: 0.9rem;
+  
+            }
+
+
+            h1{
+                @extend %logostyle;
+                // border-right: 2px solid $black;
+                // padding-right: 8px;
+
+            }
+
+            p{
+                @extend %logostyle;
+                padding-left: 3px;
+            }   
+
+        }
+    }
+
+
+
+    // HOME PAGE
+     #masthead {
+         h2 {
+             font-size: 1.3rem;
+             padding: 0 3em;
+
+             span {
+                display: block;
+              }
+         }
+
+         #landing-page-title::after {
+            margin-top: -2.2em;
+            height: 3.9em;
+          }
+     }
+
+     #home-content {
+        p {
+            font-size: 0.8rem;
+            font-weight: 400;
+          }
+     }
+
+
+     #skillset {
+         transform: translateX(0);
+         visibility: visible;
+         position: relative;
+         min-height: 100%;
+         top: 0;
+
+         .skillset-content {
+            padding: 0;
+          }
+
+          h4 {
+            font-size: 0.75rem;
+            padding: 0.4em 0;
+
+          }
+
+         .skillset-list {
+             border-left: none;
+
+             ul {
+                 list-style: none;
+                 margin-bottom: 0;
+
+                 li {
+                     padding-left: 0;
+                     font-size: 0.75rem;
+                 }
+
+             }
+         }
+
+         .skillset-list div:nth-child(2) {
+             padding: 0;
+         }
+
+     }
+
+
+ }
+
+ // Large devices (desktops, 992px and up)
+ @media (min-width: 992px) {}
+
+ // Extra large devices (large desktops, 1200px and up)
+ @media (min-width: 1200px) {}

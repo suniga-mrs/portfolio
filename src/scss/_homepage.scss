@@ -30,7 +30,6 @@
   #landing-page-title::after {
     content: "";
     display: block;
-    height: 1rem;
     background-color: $secondary;
     margin-top: -3.5em;
     height: 4em;
@@ -92,11 +91,7 @@
     display: inline-block;
     margin-top: 2rem;
   }
-
-  
-
 }
-
 
 .show-box {
   // opacity: 1;

@@ -1,17 +1,20 @@
 $("#back-link").click( function() {
-    console.log("hello");
-
+    // console.log("hello");
+    
+    
     $("#skillset").removeClass("show-box");
     $("#skillset").addClass("hide-box");
-    $("#view-link").removeClass("d-none");
+    // $(".content").css("opacity", "1");
+    // $("#view-link").removeClass("d-none");
     
 });
 
 $("#view-link").click( function() {
-    console.log("view");
-
-    $("#skillset").removeClass("hide-box");
+    // console.log("view");
     $("#skillset").addClass("show-box");
-    $("#view-link").addClass("d-none");
+    $("#skillset").removeClass("hide-box");
+    // $(".content").css("opacity", "0");
+    // $("#view-link").addClass("d-none");
+
     
 });

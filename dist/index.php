@@ -38,20 +38,18 @@
 	</header>
 
 	<main>
-		<section id="masthead">
+		<section id="masthead" class="clearfix">
 			<div id="landing-page-title">
 				<h2> Hello! Let's make an <span>Impact</span></h2>
 			</div>
-			<div class="container-fluid">
-				<div>
-					<a href="#" class="my-btn-1">See Projects</a>
-				</div>
-			</div>
+
+			<a href="#" class="my-btn-1">See Projects</a>
+
 		</section>
 
-		<section id="home-content">
+		<section id="home-content" class="clearfix">
 			<div class="container-fluid">
-				<div class="row">
+				<div class="row  no-gutters">
 
 					<div class="col-md-4">
 						<div class="profile-pic">
@@ -59,8 +57,8 @@
 						</div>
 					</div>
 
-					<div class="col-md-8">
-						<div class="row">
+					<div class="col-md-8 ">
+						<div class="row content">
 							<div class="col-md-12">
 								<h3>I am a <span>Full Stack Web Developer</span> and a <span>Graphic Designer</span>.</h3>
 								<p>With a passion for problem-solving and creative use of technology to communicate, Michelle hopes to create
@@ -79,11 +77,11 @@
 
 					<div id="skillset" class="row no-gutters d-md-block">
 						<!-- REPLACE D-NONE with class to show-->
-						<div class="col-md-12">
-							<div class="row no-gutters skillset-content">
+						<div class="col-xs-12 col-md-8 offset-md-4">
+							<div class="row no-gutters skillset-content ">
 								<div class="col-md-12">
 									<h4>Skillset</h4>
-									<div class="row no-gutters skillset-list">
+									<div class="row no-gutters skillset-list ">
 
 										<div class="col-md-3">
 											<ul>
@@ -118,7 +116,7 @@
 									<div class="row no-gutters d-md-none">
 										<div class="col-md-12">
 											<div>
-												<a href="#"  id="back-link" class="my-btn-2">Back</a>
+												<a href="#" id="back-link" class="my-btn-2">Back</a>
 											</div>
 										</div>
 									</div>
