@@ -65,6 +65,7 @@ footer p {
 .my-btn-2 {
   color: #000;
   font-size: 0.9em;
+  padding: 0.3rem 0;
   border-bottom: 1px solid #000;
 }
 
@@ -133,7 +134,7 @@ header #my-nav {
 }
 
 #masthead {
-  padding: 2em 0;
+  padding: 1.2em 0 2em;
 }
 
 #masthead h2 {
@@ -146,7 +147,7 @@ header #my-nav {
 }
 
 #masthead h2 span {
-  font-size: 3.75em;
+  font-size: 3.5em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -169,7 +170,7 @@ header #my-nav {
 }
 
 #home-content {
-  padding: 0 1em;
+  padding: 0 1em 1em;
 }
 
 #home-content h3 span {
@@ -211,20 +212,23 @@ header #my-nav {
   padding: 1rem 0;
 }
 
-#skillset .back-link {
+#skillset #back-link {
+  display: inline-block;
   margin-top: 2rem;
 }
 
 .show-box {
-  opacity: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   visibility: visible;
 }
 
 .hide-box {
-  opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   visibility: hidden;
 }

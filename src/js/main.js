@@ -3,6 +3,7 @@ $("#back-link").click( function() {
 
     $("#skillset").removeClass("show-box");
     $("#skillset").addClass("hide-box");
+    $("#view-link").removeClass("d-none");
     
 });
 
@@ -11,5 +12,6 @@ $("#view-link").click( function() {
 
     $("#skillset").removeClass("hide-box");
     $("#skillset").addClass("show-box");
+    $("#view-link").addClass("d-none");
     
 });
