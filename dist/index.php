@@ -52,9 +52,9 @@
 				<div class="row  no-gutters">
 
 					<div class="col-md-4">
-						<div class="profile-pic">
-							<img src="" alt="Michelle Suniga">
-						</div>
+							<!-- <div class="profile-pic">
+								<img src="" alt="Michelle Suniga">
+							</div> -->
 					</div>
 
 					<div class="col-md-8 ">
@@ -75,7 +75,7 @@
 						</div>
 					</div>
 
-					<div id="skillset" class="row no-gutters d-md-block">
+					<div id="skillset" class="row no-gutters hide-box d-md-block">
 						<!-- REPLACE D-NONE with class to show-->
 						<div class="col-xs-12 col-md-8 offset-md-4">
 							<div class="row no-gutters skillset-content ">

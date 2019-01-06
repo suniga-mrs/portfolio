@@ -2,8 +2,8 @@ $("#back-link").click( function() {
     // console.log("hello");
     
     
-    $("#skillset").removeClass("show-box");
-    $("#skillset").addClass("hide-box");
+    $("#skillset").toggleClass("show-box");
+    $("#skillset").toggleClass("hide-box");
     // $(".content").css("opacity", "1");
     // $("#view-link").removeClass("d-none");
     
@@ -11,8 +11,8 @@ $("#back-link").click( function() {
 
 $("#view-link").click( function() {
     // console.log("view");
-    $("#skillset").addClass("show-box");
-    $("#skillset").removeClass("hide-box");
+    $("#skillset").toggleClass("show-box");
+    $("#skillset").toggleClass("hide-box");
     // $(".content").css("opacity", "0");
     // $("#view-link").addClass("d-none");
 

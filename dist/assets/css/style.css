@@ -136,10 +136,11 @@ header #my-nav {
 
 #masthead {
   padding: 1.2em 0 2em;
+  background-color: #fafafd;
 }
 
 #masthead h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 2.25em;
@@ -170,7 +171,7 @@ header #my-nav {
 }
 
 #home-content {
-  padding: 0 1em 1em;
+  padding: 0 1em 2em;
 }
 
 #home-content h3 span {
@@ -179,6 +180,10 @@ header #my-nav {
 
 #home-content p {
   padding-right: 1em;
+}
+
+#home-content .content {
+  padding-top: 2em;
 }
 
 #skillset {
@@ -240,7 +245,7 @@ header #my-nav {
     border: none;
     font-size: 0.75em;
     padding: 0.1rem 0;
-    margin: 1em 5em 1em 0;
+    margin: 0.5em 5em 0.5em 0;
     border-bottom: 1px solid #000;
   }
   header {

@@ -2,9 +2,11 @@
 
 #masthead {
   padding: 1.2em 0 2em;
+  background-color: $light-gray;
 
   h2 {
-    font-size: 1.3rem;
+    
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 2.25em;
@@ -39,7 +41,7 @@
 
 #home-content {
 
-  padding: 0 1em 1em;
+  padding: 0 1em 2em;
 
 
   h3 span {
@@ -48,6 +50,10 @@
 
   p {
     padding-right: 1em;
+  }
+
+  .content {
+    padding-top: 2em;
   }
 
 }
