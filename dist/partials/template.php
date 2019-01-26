@@ -3,6 +3,4 @@
 
 <?php function get_page_content() { ?>
 <!-- HTML Content Here -->
-
-<h1>Hello!</h1>
 <?php }; ?>	

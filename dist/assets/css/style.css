@@ -8,6 +8,7 @@ $color5: rgba(255, 113, 91, 1); */
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -21,6 +22,7 @@ body {
   background-color: #fff;
   color: #000;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 footer {
@@ -50,6 +52,7 @@ footer p {
 
 .my-btn-1,
 .my-btn-2 {
+  cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
@@ -135,7 +138,7 @@ header #my-nav {
 }
 
 #masthead {
-  padding: 1.2em 0 2em;
+  padding: 1em 0 2em;
   background-color: #fafafd;
 }
 
@@ -152,10 +155,8 @@ header #my-nav {
   font-size: 3.5em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-#masthead h2 span:hover {
-  color: red;
+  -webkit-transform: translateX(-9px);
+  transform: translateX(-9px);
 }
 
 #masthead #landing-page-title {
@@ -171,19 +172,20 @@ header #my-nav {
 }
 
 #home-content {
-  padding: 0 1em 2em;
+  padding: 1.5em 1em 2em;
 }
 
 #home-content h3 span {
-  border-bottom: 1px solid #fadf50;
+  border-bottom: 2px solid #fadf50;
 }
 
 #home-content p {
   padding-right: 1em;
+  margin-bottom: 1.5rem;
 }
 
 #home-content .content {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 #skillset {
@@ -197,7 +199,7 @@ header #my-nav {
 }
 
 #skillset .skillset-content {
-  padding: 2rem 2rem 1rem;
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 #skillset .skillset-list {
@@ -225,8 +227,8 @@ header #my-nav {
 .show-box {
   -webkit-transform: translateX(0);
   transform: translateX(0);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   visibility: visible;
 }
 
@@ -238,14 +240,19 @@ header #my-nav {
   visibility: hidden;
 }
 
+@media (max-width: 575px) {
+  #masthead h2 {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .my-btn-1 {
-    display: inline-block;
-    float: right;
     border: none;
-    font-size: 0.75em;
+    font-size: 1em;
     padding: 0.1rem 0;
-    margin: 0.5em 5em 0.5em 0;
+    margin: 0.5em 8% 0.5em 8%;
     border-bottom: 1px solid #000;
   }
   header {
@@ -260,9 +267,10 @@ header #my-nav {
   }
   #masthead h2 {
     font-size: 1.3rem;
-    padding: 0 3em;
   }
   #masthead h2 span {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
     display: block;
   }
   #masthead #landing-page-title::after {
@@ -298,6 +306,99 @@ header #my-nav {
   #skillset .skillset-list ul li {
     padding-left: 0;
     font-size: 0.75rem;
+  }
+  #skillset .skillset-list div:nth-child(2) {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    font-size: 0.9em;
+    padding: 0 8%;
+  }
+  header {
+    padding: 10px;
+    background-color: #fafafd;
+    position: relative;
+    z-index: 100;
+  }
+  header #logo-title {
+    padding: 0.5rem 0.7rem;
+  }
+  header #logo-title h1 {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 0;
+  }
+  header #logo-title p {
+    color: #a5a5a5;
+    font-size: 0.95em;
+    margin: 0;
+  }
+  header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  header #my-nav {
+    position: relative;
+  }
+  #masthead {
+    padding: 6em 0 5em;
+  }
+  #masthead h2 {
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2.25em;
+    letter-spacing: 2px;
+  }
+  #masthead h2 span {
+    font-size: 4em;
+  }
+  #masthead #landing-page-title {
+    margin-bottom: 1.5rem;
+  }
+  #masthead #landing-page-title::after {
+    background-color: #fadf50;
+    margin-top: -2.5em;
+    height: 5em;
+  }
+  #home-content {
+    padding-top: 1rem;
+    padding-bottom: 4em;
+  }
+  #home-content .content {
+    padding-right: 4em;
+  }
+  #home-content h3 {
+    font-size: 2em;
+    padding-bottom: 1rem;
+  }
+  #home-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+  #skillset .skillset-content {
+    padding: 0;
+  }
+  #skillset h4 {
+    font-size: 1rem;
+    padding: 0.4em 0;
+  }
+  #skillset .skillset-list {
+    border-left: none;
+  }
+  #skillset .skillset-list ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  #skillset .skillset-list ul li {
+    padding-left: 0;
+    font-size: 1rem;
   }
   #skillset .skillset-list div:nth-child(2) {
     padding: 0;

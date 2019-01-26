@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -17,6 +18,7 @@ body {
   background-color: #fff;
   color: $primary;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 footer {
@@ -43,6 +45,7 @@ footer p {
 
 .my-btn-1,
 .my-btn-2 {
+  cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
   color: $primary;
@@ -56,6 +59,7 @@ footer p {
 .my-btn-2:visited {
   @extend %btn-general;
 }
+
 
 .my-btn-1 {
   @extend %btn-general;
