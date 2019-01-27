@@ -1,16 +1,48 @@
  @media (max-width: 575px) {
+
      // HOME PAGE
      #masthead {
-        h2 {
-            font-size: 1.2rem;
-            padding: 0;
-        }
-    }
+         h2 {
+             font-size: 1.2rem;
+             padding: 0;
+         }
+     }
 
- }  
- 
+ }
+
  // Small devices (landscape phones, 576px and up)
- @media (min-width: 576px) { }  
+ @media (min-width: 576px) {
+
+     #project-list {
+         .project-item {
+             padding: 10px;
+         }
+     }
+
+     #masthead.general {
+
+         #page-title::after {
+             display: block;
+             width: 85vw;
+             margin: -3.3rem auto 0;
+             height: 3.3rem;
+         }
+     }
+
+     .general {
+         h1 {
+             background-color: transparent;
+             text-align: left;
+             text-transform: lowercase;
+             font-size: 4em;
+             letter-spacing: 7px;
+         }
+
+
+     }
+
+
+ }
 
  // Medium devices (tablets, 768px and up)
  @media (min-width: 768px) {
@@ -58,8 +90,9 @@
      // HOME PAGE
      #masthead {
          h2 {
-             font-size: 1.3rem;
-            //  padding: 0 3.5em;
+             text-align: left;
+             font-size: 1.5rem;
+             //  padding: 0 3.5em;
 
              span {
                  transform: translateX(-9px);
@@ -67,7 +100,7 @@
              }
          }
 
-         #landing-page-title::after {
+         #page-title::after {
              margin-top: -2.2em;
              height: 3.9em;
          }
@@ -77,6 +110,11 @@
          p {
              font-size: 0.8rem;
              font-weight: 400;
+         }
+
+         h3 {
+             font-size: 1.3em;
+             padding-bottom: 0.2rem;
          }
      }
 
@@ -119,6 +157,37 @@
 
      }
 
+     // PROJECT PAGE
+
+     #project-list {
+
+        .details {
+            padding-left: 0;
+        }
+
+        .project-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 4%;
+        }
+
+        .project-item {
+            width: 32%;
+
+            h3 {
+                font-size: 1em;
+            }
+
+            .item-body {
+                padding-top: 1rem;
+            }
+        }
+
+     }
+
+
 
  }
 
@@ -128,128 +197,131 @@
  // Extra large devices (large desktops, 1200px and up)
  @media (min-width: 1200px) {
 
-    footer {
-        font-size: 0.9em;
-        padding: 0 8%;
-    }
-    header {
-        padding: 10px;
-        background-color: #fafafd;
-        position: relative;
-        z-index: 100;
-    
-        #logo-title {
-    
-            padding: 0.5rem 0.7rem;
-    
-            h1 {
-                color: #000;
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 1.3em;
-                margin: 0;
-            }
-    
-            p {
-                color: #a5a5a5;
-                font-size: 0.95em;
-                margin: 0;
-            }
-    
-        }
-    
-        nav {
-            position: absolute;
-            top: 0;
-            left: 0;
-    
-        }
-    
-        #my-nav {
-            position: relative;
-        }
-    }
+     footer {
+         font-size: 0.9em;
+         padding: 0 8%;
+     }
+
+     header {
+         padding: 10px;
+         background-color: #fafafd;
+         position: relative;
+         z-index: 100;
+
+         #logo-title {
+
+             padding: 0.5rem 0.7rem;
+
+             h1 {
+                 color: #000;
+                 text-transform: uppercase;
+                 font-weight: 700;
+                 font-size: 1.3em;
+                 margin: 0;
+             }
+
+             p {
+                 color: #a5a5a5;
+                 font-size: 0.95em;
+                 margin: 0;
+             }
+
+         }
+
+         nav {
+             position: absolute;
+             top: 0;
+             left: 0;
+
+         }
+
+         #my-nav {
+             position: relative;
+         }
+     }
 
 
-    #masthead {
-        padding: 6em 0 5em;
-      
-        h2 {
-          padding: 0;
-          font-size: 2rem;
-          line-height: 2.25em;
-          letter-spacing: 2px;
-      
-          span {
-            font-size: 4em;
-          }
+     #masthead {
+         padding: 6em 0 4em;
 
-      
-        }
+         h2 {
+             padding: 0;
+             font-size: 2rem;
+             line-height: 2.25em;
+             letter-spacing: 2px;
 
-        #landing-page-title {
-            margin-bottom: 1.5rem;
-          }
-        
-          #landing-page-title::after {
-            background-color: $secondary;
-            margin-top: -2.5em;
-            height: 5em;
-          }
+             span {
+                 font-size: 4em;
+             }
+         }
 
-    }
+         #page-title {
+             margin-bottom: 1.5rem;
+         }
 
-    #home-content {
-        padding-top: 1rem;
-        padding-bottom: 4em;
+         #page-title::after {
+             background-color: $secondary;
+             margin-top: -2.5em;
+             height: 5em;
+         }
+     }
 
-        .content {
-            padding-right: 4em;
-        }
-        h3 {
-            font-size: 2em;
-            padding-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            font-weight: 400;
-            padding-bottom: 1rem;
-            
-        }
-    }
 
-    #skillset {
-        .skillset-content {
-            padding: 0;
-        }
+     #home-content {
+         padding-top: 1.8rem;
+         padding-bottom: 4em;
 
-        h4 {
-            font-size: 1rem;
-            padding: 0.4em 0;
+         .content {
+             padding-right: 4em;
+         }
 
-        }
+         h3 {
+             font-size: 2em;
+             padding-bottom: 1rem;
+         }
 
-        .skillset-list {
-            border-left: none;
+         p {
+             font-size: 1.2rem;
+             font-weight: 400;
+             padding-bottom: 1rem;
 
-            ul {
-                list-style: none;
-                margin-bottom: 0;
+         }
+     }
 
-                li {
-                    padding-left: 0;
-                    font-size: 1rem;
-                }
+     #skillset {
+         .skillset-content {
+             padding: 0;
+         }
 
-            }
-        }
+         h4 {
+             font-size: 1rem;
+             padding: 0.4em 0;
 
-        .skillset-list div:nth-child(2) {
-            padding: 0;
-        }
+         }
 
-    }
-      
+         .skillset-list {
+             border-left: none;
+
+             ul {
+                 list-style: none;
+                 margin-bottom: 0;
+
+                 li {
+                     padding-left: 0;
+                     font-size: 1rem;
+                 }
+
+             }
+         }
+
+         .skillset-list div:nth-child(2) {
+             padding: 0;
+         }
+
+     }
+
+
+
 
 
 

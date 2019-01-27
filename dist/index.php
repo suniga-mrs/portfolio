@@ -2,11 +2,11 @@
 
 
 <?php function get_page_content() { ?>
-	<section id="masthead" class="clearfix">
-		<div id="landing-page-title">
+	<section id="masthead" class="">
+		<div id="page-title">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-11 offset-lg-1">
+					<div class="col-md-10 offset-md-1">
 						<h2>Hello! Let's make an <span>IMPACT</span></h2>
 					</div>
 				</div>
@@ -16,10 +16,9 @@
 		<div class="d-block d-md-flex justify-content-end">
 			<a href="projects.php" class="my-btn-1">See Projects</a>
 		</div>
-
 	</section>
 
-	<section id="home-content" class="clearfix">
+	<section id="home-content" class="">
 		<div class="container-fluid">
 			<div class="row  no-gutters">
 
@@ -29,8 +28,8 @@
 					<div class="row content">
 						<div class="col-md-12">
 							<h3>I am a <span>Full Stack Web Developer</span> and a <span>Graphic Designer</span>.</h3>
-							<p>With a passion for problem-solving and the creative use of technology to make reliable solutions, I hope to create a
-								positive impact to the people and in every industry. Currently, I'm looking for a full-time work as a web developer.</p>
+							<p>Passionate in problem-solving and the creating reliable solutions, I hope to create a
+								positive impact to the people and in every industry. Currently, I'm leveling up at Tuitt Philippines and looking for a full-time work as a web developer.</p>
 						</div>
 					</div>
 

@@ -5,7 +5,7 @@
   background-color: $light-gray;
 
   h2 {
-    
+    text-align: center;
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -16,7 +16,7 @@
     span {
       font-size: 3.5em;
       transition: all 0.3s ease;
-      transform: translateX(-9px);
+      // transform: translateX(-5px);
     }
 
     // span:hover {
@@ -27,15 +27,15 @@
   }
 
 
-  #landing-page-title {
+  #page-title {
     margin-bottom: 1.5rem;
   }
 
-  #landing-page-title::after {
+  #page-title::after {
     content: "";
     display: block;
     background-color: $secondary;
-    margin-top: -3.5em;
+    margin-top: -3em;
     height: 4em;
   }
 
@@ -43,7 +43,7 @@
 
 #home-content {
 
-  padding: 1.5em 1em 2em;
+  padding: 1.2em 1em 2em;
 
 
   h3 span {
@@ -53,10 +53,6 @@
   p {
     padding-right: 1em;
     margin-bottom: 1.5rem;
-  }
-
-  .content {
-    padding-top: 1em;
   }
 
 }

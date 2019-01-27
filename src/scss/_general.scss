@@ -76,3 +76,27 @@ footer p {
   padding: 0.3rem 0;
   border-bottom: 1px solid $primary;
 }
+
+#masthead.general {
+  padding: 1.5em 0 !important; 
+
+  #page-title::after {
+    display: none;
+  }
+
+  #page-title {
+    margin-bottom: 0 !important;
+  }
+
+}
+
+.general {
+  
+
+  h1 {
+      background-color: $secondary;
+      padding: 1rem 0.3em;
+  }
+
+
+}

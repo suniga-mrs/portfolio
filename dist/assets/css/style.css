@@ -73,6 +73,23 @@ footer p {
   border-bottom: 1px solid #000;
 }
 
+#masthead.general {
+  padding: 1.5em 0 !important;
+}
+
+#masthead.general #page-title::after {
+  display: none;
+}
+
+#masthead.general #page-title {
+  margin-bottom: 0 !important;
+}
+
+.general h1 {
+  background-color: #fadf50;
+  padding: 1rem 0.3em;
+}
+
 h3 {
   font-size: 1em;
   font-weight: 700;
@@ -143,6 +160,7 @@ header #my-nav {
 }
 
 #masthead h2 {
+  text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -155,24 +173,22 @@ header #my-nav {
   font-size: 3.5em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: translateX(-9px);
-  transform: translateX(-9px);
 }
 
-#masthead #landing-page-title {
+#masthead #page-title {
   margin-bottom: 1.5rem;
 }
 
-#masthead #landing-page-title::after {
+#masthead #page-title::after {
   content: "";
   display: block;
   background-color: #fadf50;
-  margin-top: -3.5em;
+  margin-top: -3em;
   height: 4em;
 }
 
 #home-content {
-  padding: 1.5em 1em 2em;
+  padding: 1.2em 1em 2em;
 }
 
 #home-content h3 span {
@@ -182,10 +198,6 @@ header #my-nav {
 #home-content p {
   padding-right: 1em;
   margin-bottom: 1.5rem;
-}
-
-#home-content .content {
-  padding-top: 1em;
 }
 
 #skillset {
@@ -240,10 +252,126 @@ header #my-nav {
   visibility: hidden;
 }
 
+.general h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#project-list {
+  padding: 0.5rem 0 1.5rem;
+}
+
+#project-list .thumbnail {
+  padding-right: 0.3rem;
+}
+
+#project-list .details {
+  padding-left: 0.75rem;
+  height: 100%;
+}
+
+#project-list .project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#project-list .project-item {
+  margin-top: 1rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#project-list .project-item h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+#project-list .project-item p {
+  font-size: 0.85em;
+  line-height: 1.1rem;
+}
+
+#project-list .project-item .item-image {
+  width: 100%;
+  background-color: #000;
+  height: 100%;
+}
+
+#project-list .project-item .item-image .image {
+  width: 9em;
+}
+
+#project-list .project-item .item-body {
+  height: 100%;
+}
+
+#project-list .project-item .item-body .item-desc {
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+#project-list .project-item .item-body .item-footer {
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+#project-list .project-item .item-body .item-footer span {
+  color: #7c7c7c;
+  padding-right: 5px;
+}
+
+#test .box {
+  border: 1px solid #000;
+  width: 100%;
+  height: 120px;
+}
+
+#test .green {
+  background-color: green;
+}
+
+#test .blue {
+  background-color: blue;
+}
+
 @media (max-width: 575px) {
   #masthead h2 {
     font-size: 1.2rem;
     padding: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  #project-list .project-item {
+    padding: 10px;
+  }
+  #masthead.general #page-title::after {
+    display: block;
+    width: 85vw;
+    margin: -3.3rem auto 0;
+    height: 3.3rem;
+  }
+  .general h1 {
+    background-color: transparent;
+    text-align: left;
+    text-transform: lowercase;
+    font-size: 4em;
+    letter-spacing: 7px;
   }
 }
 
@@ -266,20 +394,25 @@ header #my-nav {
     padding-left: 3px;
   }
   #masthead h2 {
-    font-size: 1.3rem;
+    text-align: left;
+    font-size: 1.5rem;
   }
   #masthead h2 span {
     -webkit-transform: translateX(-9px);
     transform: translateX(-9px);
     display: block;
   }
-  #masthead #landing-page-title::after {
+  #masthead #page-title::after {
     margin-top: -2.2em;
     height: 3.9em;
   }
   #home-content p {
     font-size: 0.8rem;
     font-weight: 400;
+  }
+  #home-content h3 {
+    font-size: 1.3em;
+    padding-bottom: 0.2rem;
   }
   #skillset {
     -webkit-transform: translateX(0);
@@ -309,6 +442,33 @@ header #my-nav {
   }
   #skillset .skillset-list div:nth-child(2) {
     padding: 0;
+  }
+  #project-list .details {
+    padding-left: 0;
+  }
+  #project-list .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 4%;
+  }
+  #project-list .project-item {
+    width: 32%;
+  }
+  #project-list .project-item h3 {
+    font-size: 1em;
+  }
+  #project-list .project-item .item-body {
+    padding-top: 1rem;
   }
 }
 
@@ -347,7 +507,7 @@ header #my-nav {
     position: relative;
   }
   #masthead {
-    padding: 6em 0 5em;
+    padding: 6em 0 4em;
   }
   #masthead h2 {
     padding: 0;
@@ -358,16 +518,16 @@ header #my-nav {
   #masthead h2 span {
     font-size: 4em;
   }
-  #masthead #landing-page-title {
+  #masthead #page-title {
     margin-bottom: 1.5rem;
   }
-  #masthead #landing-page-title::after {
+  #masthead #page-title::after {
     background-color: #fadf50;
     margin-top: -2.5em;
     height: 5em;
   }
   #home-content {
-    padding-top: 1rem;
+    padding-top: 1.8rem;
     padding-bottom: 4em;
   }
   #home-content .content {
