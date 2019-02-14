@@ -8,6 +8,18 @@
          }
      }
 
+     #project-list {
+        .project-item {
+            padding: 10px;
+
+            .image {
+                img {
+                    max-width: 144px;
+                }
+            }
+        }
+    }
+
  }
 
  // Small devices (landscape phones, 576px and up)
@@ -182,6 +194,13 @@
 
             .item-body {
                 padding-top: 1rem;
+            }
+
+            .image {
+                width: 9em;
+                img {
+                    max-width: 348px;
+                }
             }
         }
 

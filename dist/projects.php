@@ -21,13 +21,13 @@
             <div class="col-12">
             <div class="project-container">
 
-                <?php for($x = 0; $x < 6; $x++) { ?>
+    
                     <div class="project-item">
                         <div  class="d-flex flex-row d-sm-block">
                             <div class="">
                                 <div class="item-image box d-flex">
                                     <div class="image">  
-                                        hello
+                                        <img src="assets/images/spark-apps.JPG" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@
                                 <div class="details">
                                     <div class="item-body d-flex flex-column">
                                         <div class="item-title">
-                                            <h3>Spark Apps Technology</h3>
+                                            <h3><a href="https://suniga-mrs.github.io/spark-apps-tech/" target="_blank">Spark Apps Tech</a></h3>
                                         </div>
                                         <div class="item-desc">
                                             <p>A company brochure website</p>
@@ -47,7 +47,6 @@
                                                 <span>Bootstap 4</span>
                                             </div>
                                             <div class="d-block">
-                                                <span>Branding</span>
                                                 <span>Web Design & Development</span>
                                             </div>
                                         </div>
@@ -56,7 +55,41 @@
                             </div>
                         </div>
                     </div>
-                    <?php } ?>
+
+                    <div class="project-item">
+                        <div  class="d-flex flex-row d-sm-block">
+                            <div class="">
+                                <div class="item-image box d-flex">
+                                    <div class="image">  
+                                        <img src="assets/images/outbox-systems.JPG" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="details">
+                                    <div class="item-body d-flex flex-column">
+                                        <div class="item-title">
+                                            <h3><a href="http://inventory.michellesuniga.com" target="_blank">Outbox Inventory</a></h3>
+                                        </div>
+                                        <div class="item-desc">
+                                            <p>An inventory system for a small milk tea shop</p>
+                                        </div>
+                                        <div class="item-footer mt-auto">
+                                            <div class="d-block">
+                                                <span>Laravel</span>
+                                                <span>JS</span>
+                                                <span>Bootstap 4</span>
+                                            </div>
+                                            <div class="d-block">
+                                                <span>Web Design & Development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
                 </div>
             </div>
         </div>

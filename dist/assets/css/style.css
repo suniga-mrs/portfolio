@@ -305,7 +305,6 @@ header #my-nav {
 
 #project-list .project-item .item-image {
   width: 100%;
-  background-color: #000;
   height: 100%;
 }
 
@@ -353,6 +352,12 @@ header #my-nav {
   #masthead h2 {
     font-size: 1.2rem;
     padding: 0;
+  }
+  #project-list .project-item {
+    padding: 10px;
+  }
+  #project-list .project-item .image img {
+    max-width: 144px;
   }
 }
 
@@ -469,6 +474,12 @@ header #my-nav {
   }
   #project-list .project-item .item-body {
     padding-top: 1rem;
+  }
+  #project-list .project-item .image {
+    width: 9em;
+  }
+  #project-list .project-item .image img {
+    max-width: 348px;
   }
 }
 
