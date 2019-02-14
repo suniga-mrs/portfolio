@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    AOS.init();
 
     $("#back-link").click( function() {
         

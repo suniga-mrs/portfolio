@@ -8,8 +8,9 @@
 	<link rel="icon" href="assets/images/favicon.ico">
 	<title>Portfolio - Draft</title>
 
-	<!-- Latest compiled and minified CSS -->
+	<!-- Vendor CSS -->
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/aos/aos.css">
 
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,700i,800" rel="stylesheet">
