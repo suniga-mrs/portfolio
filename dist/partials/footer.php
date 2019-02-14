@@ -13,7 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 
