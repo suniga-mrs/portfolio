@@ -61,7 +61,7 @@
                             <div class="">
                                 <div class="item-image box d-flex">
                                     <div class="image">  
-                                        <img src="assets/images/outbox-systems.JPG" alt="" class="img-fluid">
+                                        <img src="assets/images/outbox-systems.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
