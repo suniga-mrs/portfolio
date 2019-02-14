@@ -4,7 +4,7 @@
 <?php function get_page_content() { ?>
 <!-- HTML Content Here -->
 <section id="masthead" class="general">
-    <div id="page-title">
+    <div id="page-title" data-aos="fade-in" >
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
@@ -22,7 +22,7 @@
             <div class="project-container">
 
     
-                    <div class="project-item">
+                    <div class="project-item" data-aos="fade-down" data-aos-delay="500">
                         <div  class="d-flex flex-row d-sm-block">
                             <div class="">
                                 <div class="item-image box d-flex">
@@ -56,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="project-item">
+                    <div class="project-item" data-aos="fade-down" data-aos-delay="700">
                         <div  class="d-flex flex-row d-sm-block">
                             <div class="">
                                 <div class="item-image box d-flex">

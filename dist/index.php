@@ -3,11 +3,11 @@
 
 <?php function get_page_content() { ?>
 	<section id="masthead" class="">
-		<div id="page-title">
+		<div id="page-title" data-aos="fade-in" >
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
-						<h2>Hello! Let's make an <span>IMPACT</span></h2>
+						<h2 data-aos="fade-right">Hello! Let's make an <span>IMPACT</span></h2>
 					</div>
 				</div>
 			</div>
