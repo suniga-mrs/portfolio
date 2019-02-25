@@ -2,7 +2,7 @@
 
 
 <?php function get_page_content() { ?>
-	<section id="masthead" class="">
+	<section id="masthead">
 		<div id="page-title" data-aos="fade-in" >
 			<div class="container-fluid">
 				<div class="row">
@@ -18,7 +18,7 @@
 		</div>
 	</section>
 
-	<section id="home-content" class="">
+	<section id="home-content" >
 		<div class="container-fluid">
 			<div class="row  no-gutters">
 
@@ -28,8 +28,10 @@
 					<div class="row content">
 						<div class="col-md-12">
 							<h3>I am a <span>Full Stack Web Developer</span> and a <span>Graphic Designer</span>.</h3>
-							<p>Passionate in problem-solving and the creating reliable solutions, I hope to create a
-								positive impact to the people and in every industry. Currently, I'm leveling up at Tuitt Philippines and looking for a full-time work as a web developer.</p>
+						<p>Passionate in problem-solving and the creating reliable solutions, I hope to create a positive impact to the people and in the workplace. Currently, I'm leveling up at Tuitt Philippines and looking for a full-time work as a web developer.</p>
+
+						<p>Check out my <a href="https://docs.google.com/document/d/1c2D6sHmu7wHKQoykVYygyOz-dy0HoBGeMUlrcAErBbA/edit?usp=sharing" target="_blank"><span>resume</span></a></p>
+
 						</div>
 					</div>
 
@@ -50,34 +52,34 @@
 								<h4>Skillset</h4>
 								<div class="row no-gutters skillset-list ">
 
-									<div class="col-md-3">
-										<ul>
-											<li>HTML5</li>
-											<li>CSS3</li>
-											<li>Bootstrap 4</li>
-											<li>PHP</li>
-											<li>Laravel 5</li>
-										</ul>
-									</div>
-
-									<div class="col-md-3">
-										<ul>
-											<li>Web Design</li>
-											<li>Graphic Design</li>
-											<li>Illustration</li>
-											<li>Branding</li>
-											<li>Art Direction</li>
-										</ul>
-									</div>
-
-									<div class="col-md-3">
-										<ul>
-											<li>Photography</li>
-											<li>Illustration</li>
-											<li>Video Production</li>
-											<li>Video Editing</li>
-										</ul>
-									</div>
+								<div class="col-md-3">
+									<ul>
+										<li>HTML5</li>
+										<li>CSS3</li>
+										<li>Javascript</li>
+										<li>MySQL</li>
+										<li>PHP</li>
+										<li>Bootstrap 4</li>
+									</ul>
+								</div>
+								
+								<div class="col-md-3">
+									<ul>
+										<li>Laravel 5</li>
+										<li>Jquery</li>
+										<li>NodeJS</li>
+										<li>ExpressJS</li>
+										<li>MongoDB</li>
+									</ul>
+								</div>
+								
+								<div class="col-md-3">
+									<ul>
+										<li>Graphic Design</li>
+										<li>Branding</li>
+										<li>Video Production</li>
+									</ul>
+								</div>
 
 								</div>
 								<div class="row no-gutters d-md-none">
@@ -95,4 +97,5 @@
 			</div>
 		</div>
 	</section>
-<?php }; ?>	
+
+<?php }; ?>

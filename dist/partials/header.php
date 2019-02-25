@@ -5,7 +5,7 @@
     </div>
     <nav class="d-none">
         <div id="my-nav">
-            <ul>
+            <ul class="d-flex">
                 <li><a class="nav-hover my-nav-item" href="#">FAQs</a></li>
                 <li><a class="nav-hover my-nav-item" href="#">Contacts</a></li>
             </ul>

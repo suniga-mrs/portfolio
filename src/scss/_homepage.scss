@@ -46,15 +46,27 @@
   padding: 1.2em 1em 2em;
 
 
-  h3 span {
+  span {
     border-bottom: 2px solid $secondary;
   }
 
   p {
     padding-right: 1em;
     margin-bottom: 1.5rem;
+
+    span {
+      border-bottom: 2px solid $secondary;
+      font-weight: 700;
+    }
+
+    span:hover {
+      background: $secondary;
+    }
   }
 
+  h5 {
+    font-size: 0.8rem;
+  }
 }
 
 

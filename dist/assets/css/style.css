@@ -66,6 +66,10 @@ footer p {
   margin: 0 0.9em;
 }
 
+.my-btn-1:hover {
+  background-color: #fadf50;
+}
+
 .my-btn-2 {
   color: #000;
   font-size: 0.9em;
@@ -88,6 +92,18 @@ footer p {
 .general h1 {
   background-color: #fadf50;
   padding: 1rem 0.3em;
+}
+
+nav #my-nav {
+  width: 100%;
+}
+
+nav #my-nav ul {
+  list-style: none;
+}
+
+nav #my-nav ul li {
+  width: 4em;
 }
 
 h3 {
@@ -191,13 +207,26 @@ header #my-nav {
   padding: 1.2em 1em 2em;
 }
 
-#home-content h3 span {
+#home-content span {
   border-bottom: 2px solid #fadf50;
 }
 
 #home-content p {
   padding-right: 1em;
   margin-bottom: 1.5rem;
+}
+
+#home-content p span {
+  border-bottom: 2px solid #fadf50;
+  font-weight: 700;
+}
+
+#home-content p span:hover {
+  background: #fadf50;
+}
+
+#home-content h5 {
+  font-size: 0.8rem;
 }
 
 #skillset {
@@ -479,7 +508,16 @@ header #my-nav {
     width: 9em;
   }
   #project-list .project-item .image img {
-    max-width: 348px;
+    max-width: 180px;
+  }
+}
+
+@media (min-width: 992px) {
+  #project-list .project-item .image {
+    width: 9em;
+  }
+  #project-list .project-item .image img {
+    max-width: 250px;
   }
 }
 
@@ -573,5 +611,11 @@ header #my-nav {
   }
   #skillset .skillset-list div:nth-child(2) {
     padding: 0;
+  }
+  #project-list .project-item .image {
+    width: 9em;
+  }
+  #project-list .project-item .image img {
+    max-width: 350px;
   }
 }
