@@ -1,7 +1,12 @@
     <footer class="d-flex justify-content-between "> 
         <div class="align-self-center">
-            <p>Michelle Suniga &copy; 2019</p>
+            <a href="https://twitter.com/michiesuniga" target="_blank"><img src="assets/images/sm-twitter.svg" alt="Twitter"></a>
+            <a href="https://www.behance.net/msuniga"  target="_blank"><img src="assets/images/sm-behance.svg" alt="Behance"></a>
+            <a href="https://github.com/suniga-mrs" target="_blank"><img src="assets/images/sm-github.svg" alt="Github"></a>
         </div>
+        <!-- <div class="align-self-center text-center">
+            <p>Michelle Suniga &copy; 2019</p>
+        </div> -->
         <div class="align-self-center">
             <a href="mailto:suniga.mrs@gmail.com">suniga.mrs@gmail.com</a>
         </div>

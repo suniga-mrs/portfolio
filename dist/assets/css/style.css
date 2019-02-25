@@ -41,6 +41,12 @@ footer p {
   margin: 0;
 }
 
+footer img {
+  width: 15px;
+  margin-right: 0.3rem;
+  opacity: 0.6;
+}
+
 .my-btn-1:active,
 .my-btn-1:focus,
 .my-btn-1:visited,
@@ -426,6 +432,9 @@ header #my-nav {
   }
   header #logo-title p {
     padding-left: 3px;
+  }
+  footer img {
+    width: 20px;
   }
   #masthead h2 {
     text-align: left;

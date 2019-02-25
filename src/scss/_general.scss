@@ -32,10 +32,17 @@ footer {
   font-size: 0.75rem;
 
   z-index: 100;
-}
 
-footer p {
-  margin: 0;
+  p {
+    margin: 0;
+  }
+
+  img {
+    width: 15px;
+    margin-right: 0.3rem;
+    opacity: 0.6;
+  }
+  
 }
 
 

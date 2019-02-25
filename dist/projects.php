@@ -69,7 +69,7 @@
                                 <div class="details">
                                     <div class="item-body d-flex flex-column">
                                         <div class="item-title">
-                                            <h3><a href="http://inventory.michellesuniga.com" target="_blank">Outbox Inventory</a></h3>
+                                            <h3><a href="http://inventory-system.michellesuniga.com" target="_blank">Outbox Inventory</a></h3>
                                         </div>
                                         <div class="item-desc">
                                             <p>An inventory system for a small milk tea shop</p>
