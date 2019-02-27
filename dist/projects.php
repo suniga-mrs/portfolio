@@ -46,9 +46,6 @@
                                                 <span>CSS</span>
                                                 <span>Bootstap 4</span>
                                             </div>
-                                            <div class="d-block">
-                                                <span>Web Design & Development</span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -80,9 +77,40 @@
                                                 <span>JS</span>
                                                 <span>Bootstap 4</span>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-aos="fade-down" data-aos-delay="700">
+                        <div  class="d-flex flex-row d-sm-block">
+                            <div class="">
+                                <div class="item-image box d-flex">
+                                    <div class="image">  
+                                        <img src="assets/images/tutorme.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="details">
+                                    <div class="item-body d-flex flex-column">
+                                        <div class="item-title">
+                                            <h3><a href="#" target="_blank">TutorMe App</a></h3>
+                                        </div>
+                                        <div class="item-desc">
+                                            <p>A Web App that connects you to a tutor nearby</p>
+                                        </div>
+                                        <div class="item-footer mt-auto">
                                             <div class="d-block">
-                                                <span>Web Design & Development</span>
+                                                <span>NodeJS</span>
+                                                <span>Laravel</span>
+                                                <span>Bootstap 4</span>
+                                                <span>Express</span>
+                                                <span>MongoDB</span>
                                             </div>
+                  
                                         </div>
                                     </div>
                                 </div>
